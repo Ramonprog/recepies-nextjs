@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function RecipesCard({ recipe }: { recipe: Recipe }) {
   return (
-    <Link href="#">
+    <Link href={`/recipes/${recipe.id}`} className="flex flex-col items-center gap-4 p-4">
       <div className="border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
         <div className="relative h-48 w-full">
           <Image src={recipe.image} alt={recipe.title} fill className="object-cover" />
