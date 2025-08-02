@@ -66,11 +66,11 @@ export default function RecipesPage({ params }: { params: { id: string } }) {
 
            <div className="">
               <h3 className="text-lg font-bold">Modos de preparo</h3>
-              <ul className="list-decimal list-inside">
+               <ol className="list-decimal list-inside">
                 {currentRecipe?.instructions.map((ingredient, index) => (
                   <li key={index} className="marker:text-orange-500">{ingredient}</li>
                 ))}
-              </ul>
+              </ol>
             </div>
 
           </div>
@@ -78,4 +78,4 @@ export default function RecipesPage({ params }: { params: { id: string } }) {
       </div>
     </main>
   )
-}
+} 
