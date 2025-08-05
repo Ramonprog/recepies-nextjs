@@ -55,8 +55,8 @@ export function RecipeFormModal() {
           </div>
 
           <div>
-            <Label htmlFor="url">URL</Label>
-            <Input id="url" placeholder="Cole a a URL da receita" />
+            <Label htmlFor="imageUrl">URL</Label>
+            <Input id="imageUrl" placeholder="Cole a a URL da receita" />
           </div>
 
           <div className="grid grid-cols-3 gap-2">
